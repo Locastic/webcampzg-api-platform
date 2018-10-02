@@ -52,7 +52,7 @@ const Welcome = () => (
                         <div className="other__content">
                             <h3>API</h3>
                             <ButtonsGroup
-                                httpLink="http://localhost:8080"
+                                httpLink="http://localhost:8090"
                                 httpsLink="https://localhost:8443"
                             />
                             <h3>Cached API</h3>
@@ -69,7 +69,7 @@ const Welcome = () => (
                         <div className="other__content">
                             <h3>Admin</h3>
                             <ButtonsGroup
-                                httpLink="http://localhost:81"
+                                httpLink="http://localhost:82"
                                 httpsLink="https://localhost:444"
                             />
                         </div>
