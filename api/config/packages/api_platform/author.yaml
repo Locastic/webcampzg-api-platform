@@ -2,9 +2,9 @@ resources:
     App\Entity\Author:
         iri: http://schema.org/Person
         properties:
-            firstName:
+            firstname:
                 iri: http://schema.org/familyName
-            lastName:
+            lastname:
                 iri: http://schema.org/givenName
             birthday:
                 iri: https://schema.org/birthDate

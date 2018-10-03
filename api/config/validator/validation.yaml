@@ -1,0 +1,38 @@
+App\Entity\Book:
+    properties:
+        isbn:
+            - NotBlank: ~
+            - Isbn: ~
+        title:
+            - NotBlank: ~
+        abstract:
+            - NotBlank: ~
+        publicationDate:
+            - NotBlank: ~
+            - Date: ~
+        author:
+            - NotNull: ~
+
+App\Entity\Author:
+    properties:
+        firstname:
+            - NotBlank: ~
+        lastname:
+            - NotBlank: ~
+        birthday:
+            - NotBlank: ~
+            - Date: ~
+
+App\Entity\Review:
+    properties:
+        book:
+          - NotNull: ~
+        author:
+          - NotBlank: ~
+          - Email: ~
+        review:
+          - NotNull: ~
+        rate:
+          - Range:
+              min: 1
+              max: 5
