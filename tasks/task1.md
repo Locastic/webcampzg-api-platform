@@ -18,11 +18,10 @@ Extra credit
 ------------
 - Use http://schema.org/Person for Author resource.
 
-More info
----------
-You can also use xml or annotations for defining resources.
-
-**Documentation:** https://api-platform.com/docs/core/getting-started#mapping-the-entities
+Documentation
+-----
+https://api-platform.com/docs/core/getting-started#mapping-the-entities
+https://api-platform.com/docs/core/external-vocabularies
 
 Solution
 --------

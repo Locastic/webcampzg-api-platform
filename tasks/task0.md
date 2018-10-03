@@ -14,5 +14,6 @@ More info
 ---------
 It is normal to use documentation and google in your everyday work, so you can use it also today. 
 
+**API Platform Configuration** https://api-platform.com/docs/core/configuration <br/>
 **Documentation:** https://api-platform.com/docs/ <br/>
 **Google:** https://google.com/

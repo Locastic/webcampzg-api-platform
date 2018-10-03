@@ -11,8 +11,12 @@ Create validation for Book, Author and Validation entity.
 
 Steps
 -----
-- create api/src/Resource/config/validation.yml file
-- create validation rules
+- Create api/src/Resource/config/validation.yml file
+- Create validation rules
+
+Documentation
+-----
+https://api-platform.com/docs/core/validation
 
 Solution
 --------
