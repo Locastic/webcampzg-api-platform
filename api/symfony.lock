@@ -38,6 +38,9 @@
     "doctrine/common": {
         "version": "v2.8.1"
     },
+    "doctrine/data-fixtures": {
+        "version": "v1.3.1"
+    },
     "doctrine/dbal": {
         "version": "v2.6.3"
     },
@@ -86,6 +89,9 @@
             "ref": "bb31a3bbec00a8fc8aa1c9fbf9b0ef9fc492f93d"
         }
     },
+    "fzaninotto/faker": {
+        "version": "v1.8.0"
+    },
     "guzzlehttp/guzzle": {
         "version": "6.3.0"
     },
@@ -95,11 +101,32 @@
     "guzzlehttp/psr7": {
         "version": "1.4.2"
     },
+    "hautelook/alice-bundle": {
+        "version": "2.1",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "2.1",
+            "ref": "89df96834a83a6b41c0a21b78d471840f8666a85"
+        }
+    },
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
     },
     "league/html-to-markdown": {
         "version": "4.6.2"
+    },
+    "myclabs/deep-copy": {
+        "version": "1.8.1"
+    },
+    "nelmio/alice": {
+        "version": "3.2",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "3.2",
+            "ref": "aaf440eb4d289ead8e2ef986c4f25c97fffec4ac"
+        }
     },
     "nelmio/cors-bundle": {
         "version": "1.5",
@@ -136,6 +163,18 @@
     },
     "psr/simple-cache": {
         "version": "1.0.0"
+    },
+    "sebastian/comparator": {
+        "version": "3.0.2"
+    },
+    "sebastian/diff": {
+        "version": "3.0.1"
+    },
+    "sebastian/exporter": {
+        "version": "3.1.0"
+    },
+    "sebastian/recursion-context": {
+        "version": "3.0.0"
     },
     "symfony/asset": {
         "version": "v4.0.3"
@@ -295,6 +334,15 @@
     },
     "symfony/yaml": {
         "version": "v4.0.3"
+    },
+    "theofidry/alice-data-fixtures": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "fe5a50faf580eb58f08ada2abe8afbd2d4941e05"
+        }
     },
     "twig/twig": {
         "version": "v2.4.4"

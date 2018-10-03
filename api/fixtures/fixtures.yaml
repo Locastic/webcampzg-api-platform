@@ -1,0 +1,21 @@
+'App\Entity\Author':
+    author_{1..20}:
+       firstName: <firstName()>
+       lastName: <lastName()>
+       birthday: <date('Y-m-d', '-20 years')>
+
+'App\Entity\Book':
+    book_{1..100}:
+        isbn: <isbn13()>
+        title: <sentence()>
+        abstract: <paragraph()>
+        author: '@author_*'
+        publicationDate: <date()>
+
+'App\Entity\Review':
+    review_{1..500}:
+        review: <paragraph()>
+        rate: <numberBetween(0, 5)>
+        book: '@book_*'
+        author: <email()>
+        createdAt: <dateTime()>
