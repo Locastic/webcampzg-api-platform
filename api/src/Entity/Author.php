@@ -2,7 +2,9 @@
 
 namespace App\Entity;
 
+
 use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 
 class Author
 {
@@ -56,12 +58,12 @@ class Author
         $this->birthday = $birthday;
     }
 
-    public function getBooks(): ArrayCollection
+    public function getBooks(): Collection
     {
         return $this->books;
     }
 
-    public function setBooks(ArrayCollection $books): void
+    public function setBooks(Collection $books): void
     {
         $this->books = $books;
     }

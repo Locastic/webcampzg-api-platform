@@ -2,7 +2,9 @@
 
 namespace App\Entity;
 
+
 use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 
 class Book
 {
@@ -92,12 +94,12 @@ class Book
         $this->author = $author;
     }
 
-    public function getReviews(): ArrayCollection
+    public function getReviews(): Collection
     {
         return $this->reviews;
     }
 
-    public function setReviews(ArrayCollection $reviews): void
+    public function setReviews(Collection $reviews): void
     {
         $this->reviews = $reviews;
     }
