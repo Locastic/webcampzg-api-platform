@@ -1,2 +1,12 @@
 resources:
-    App\Entity\Review: ~
+    App\Entity\Review:
+        iri: http://schema.org/Review
+        properties:
+            rate:
+                iri: https://schema.org/reviewRating
+            review:
+                iri: http://schema.org/reviewBody
+            book:
+                iri: http://schema.org/itemReviewed
+            author:
+                iri: iri="http://schema.org/author

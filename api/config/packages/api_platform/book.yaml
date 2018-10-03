@@ -1,2 +1,6 @@
 resources:
-    App\Entity\Book: ~
+    App\Entity\Book:
+        iri: http://schema.org/Book
+        properties:
+            averageReviewRate:
+                iri: https://schema.org/aggregateRating

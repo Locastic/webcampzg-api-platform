@@ -1,2 +1,10 @@
 resources:
-    App\Entity\Author: ~
+    App\Entity\Author:
+        iri: http://schema.org/Person
+        properties:
+            firstName:
+                iri: http://schema.org/familyName
+            lastName:
+                iri: http://schema.org/givenName
+            birthday:
+                iri: https://schema.org/birthDate
