@@ -9,5 +9,6 @@
         <field name="firstname" length="255"/>
         <field name="lastname" length="255"/>
         <field name="birthday" type="date"/>
+        <one-to-many field="books" target-entity="App\Entity\Book" mapped-by="author"/>
     </entity>
 </doctrine-mapping>

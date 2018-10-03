@@ -11,10 +11,11 @@
         <field name="abstract" type="text"/>
         <field name="publicationDate" type="date"/>
         <field name="averageReviewRate" type="float"/>
-        <many-to-one field="author" target-entity="App\Entity\Author">
+        <many-to-one field="author" target-entity="App\Entity\Author" inversed-by="books">
             <join-columns>
-                <join-column on-delete="CASCADE" nullable="false" />
+                <join-column on-delete="CASCADE" nullable="false"/>
             </join-columns>
         </many-to-one>
+        <one-to-many field="reviews" target-entity="App\Entity\Review" mapped-by="book"/>
     </entity>
 </doctrine-mapping>

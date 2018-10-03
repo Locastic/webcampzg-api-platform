@@ -10,7 +10,7 @@
         <field name="review" type="text"/>
         <field name="rate" type="integer"/>
         <field name="createdAt" type="datetime"/>
-        <many-to-one field="book" target-entity="App\Entity\Book">
+        <many-to-one field="book" target-entity="App\Entity\Book" inversed-by="reviews">
             <join-columns>
                 <join-column on-delete="CASCADE" nullable="false" />
             </join-columns>

@@ -2,6 +2,8 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
+
 class Author
 {
     private $id;
@@ -11,6 +13,13 @@ class Author
     private $lastname;
 
     private $birthday;
+
+    private $books;
+
+    public function __construct()
+    {
+        $this->books = new ArrayCollection();
+    }
 
     public function getId(): int
     {
@@ -45,5 +54,15 @@ class Author
     public function setBirthday(\DateTime $birthday): void
     {
         $this->birthday = $birthday;
+    }
+
+    public function getBooks(): ArrayCollection
+    {
+        return $this->books;
+    }
+
+    public function setBooks(ArrayCollection $books): void
+    {
+        $this->books = $books;
     }
 }

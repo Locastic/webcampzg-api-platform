@@ -2,6 +2,8 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
+
 class Book
 {
     private $id;
@@ -17,6 +19,13 @@ class Book
     private $averageReviewRate = 0;
 
     private $author;
+
+    private $reviews;
+
+    public function __construct()
+    {
+        $this->reviews = new ArrayCollection();
+    }
 
     public function getId(): int
     {
@@ -81,5 +90,15 @@ class Book
     public function setAuthor(Author $author): void
     {
         $this->author = $author;
+    }
+
+    public function getReviews(): ArrayCollection
+    {
+        return $this->reviews;
+    }
+
+    public function setReviews(ArrayCollection $reviews): void
+    {
+        $this->reviews = $reviews;
     }
 }

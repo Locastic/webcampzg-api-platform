@@ -1,6 +1,12 @@
 resources:
     App\Entity\Book:
+        attributes:
+            order:
+                title: 'ASC'
         iri: http://schema.org/Book
         properties:
             averageReviewRate:
                 iri: https://schema.org/aggregateRating
+            reviews:
+                subresource:
+                    resourceClass: 'App\Entity\Review'

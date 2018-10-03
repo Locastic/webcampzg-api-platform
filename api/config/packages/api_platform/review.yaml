@@ -1,5 +1,8 @@
 resources:
     App\Entity\Review:
+        attributes:
+            order:
+                createdAt: 'DESC'
         iri: http://schema.org/Review
         properties:
             rate:

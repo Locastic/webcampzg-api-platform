@@ -1,5 +1,8 @@
 resources:
     App\Entity\Author:
+        attributes:
+            order:
+                lastname: 'ASC'
         iri: http://schema.org/Person
         properties:
             firstname:
@@ -8,3 +11,7 @@ resources:
                 iri: http://schema.org/givenName
             birthday:
                 iri: https://schema.org/birthDate
+            books:
+                subresource:
+                    resourceClass: 'App\Entity\Book'
+                    maxDepth: 1
