@@ -3,6 +3,9 @@ resources:
         attributes:
             order:
                 title: 'ASC'
+            filters:
+                - book.search_filter
+                - book.date_filter
         iri: http://schema.org/Book
         properties:
             averageReviewRate:
