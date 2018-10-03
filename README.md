@@ -7,7 +7,7 @@ Install
 * clone repository
 * install Docker (https://docs.docker.com/install/)
 * run "docker-compose up -d" in your console and project root
-* test localhost:90 - if you got the screen bellow, everything is ok and you are ready
+* test [localhost:90](http://localhost:90) - if you got the screen bellow, everything is ok and you are ready
 
 <p align="center"><img src="https://api-platform.com/static/api-platform-2.2-welcome-fd7617555c903bebe52c68d1d39e2e61-d4def.png"/></p>
 
