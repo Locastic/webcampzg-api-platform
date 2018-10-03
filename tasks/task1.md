@@ -10,7 +10,7 @@ Steps
 - Create Book, Author and Review entites (xml mapping, php classes)
 - Create `resources.yml` file in `api/config/packages/api_platform`
 - Add Book, Author and Review entities to `api/config/packages/api_platform/resources.yml`
-- Import fixtures with following command: `docker-compose exec php bin/console fixtures:load --no-interaction`
+- Import fixtures with following command: `./bin/reset-db`
 - Open [http://localhost:8090](http://localhost:8090) in your browser and test endpoints in sandbox
 - Open [http://localhost:90](http://localhost:90) in your browser and test endpoints in Admin
 
