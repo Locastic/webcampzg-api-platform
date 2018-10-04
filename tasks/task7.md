@@ -14,14 +14,14 @@ if value is >4 set value to 'great'.
 Steps
 -----
 - Add property rank in Book entity, don't map it to database (it is virtual field)
-- Create event subscriber for POST_READ event:
+- Create event subscriber for PRE_SERIALIZE event:
 ``` php
 /**
     public static function getSubscribedEvents()
     {
         return [
             KernelEvents::VIEW => [
-                'postPlayerPostWrite', EventPriorities::POST_READ
+                'setRank', EventPriorities::PRE_SERIALIZE
             ],
         ];
     }
