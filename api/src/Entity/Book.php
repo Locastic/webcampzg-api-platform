@@ -5,21 +5,40 @@ namespace App\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 class Book
 {
     private $id;
 
+    /**
+     * @Groups({"book:read", "book:write"})
+     */
     private $isbn;
 
+    /**
+     * @Groups({"book:read", "book:write", "book:read-collection"})
+     */
     private $title;
 
+    /**
+     * @Groups({"book:read", "book:write"})
+     */
     private $abstract;
 
+    /**
+     * @Groups({"book:read", "book:write", "book:read-collection"})
+     */
     private $publicationDate;
 
+    /**
+     * @Groups({"book:read"})
+     */
     private $averageReviewRate = 0;
 
+    /**
+     * @Groups({"book:read", "book:write", "book:read-collection"})
+     */
     private $author;
 
     private $reviews;

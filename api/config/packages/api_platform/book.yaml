@@ -13,3 +13,14 @@ resources:
             reviews:
                 subresource:
                     resourceClass: 'App\Entity\Review'
+        itemOperations:
+            get:
+                normalization_context:
+                    groups: ['book:read']
+            put: ~
+            delete: ~
+        collectionOperations:
+            post: ~
+            get:
+                normalization_context:
+                    groups: ['book:read-collection']

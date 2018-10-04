@@ -2,18 +2,35 @@
 
 namespace App\Entity;
 
+use Symfony\Component\Serializer\Annotation\Groups;
+
 class Review
 {
     private $id;
 
+    /**
+     * @Groups({"review:read", "review:write"})
+     */
     private $author;
 
+    /**
+     * @Groups({"review:write", "review:read"})
+     */
     private $review;
 
+    /**
+     * @Groups({"review:write", "review:read"})
+     */
     private $rate;
 
+    /**
+     * @Groups({"review:read"})
+     */
     private $createdAt;
 
+    /**
+     * @Groups({"review:write", "review:read"})
+     */
     private $book;
 
     public function __construct()

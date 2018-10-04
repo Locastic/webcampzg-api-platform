@@ -1,6 +1,10 @@
 resources:
     App\Entity\Review:
         attributes:
+            normalization_context:
+                groups: ['review:read']
+            denormalization_context:
+                groups: ['review:write']
             order:
                 createdAt: 'DESC'
         iri: http://schema.org/Review
@@ -13,3 +17,6 @@ resources:
                 iri: http://schema.org/itemReviewed
             author:
                 iri: iri="http://schema.org/author
+        itemOperations:
+            get: ~
+            put: ~
