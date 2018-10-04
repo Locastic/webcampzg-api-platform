@@ -43,6 +43,11 @@ class Book
 
     private $reviews;
 
+    /**
+     * @Groups({"book:read"})
+     */
+    private $rank;
+
     public function __construct()
     {
         $this->reviews = new ArrayCollection();
@@ -121,5 +126,15 @@ class Book
     public function setReviews(Collection $reviews): void
     {
         $this->reviews = $reviews;
+    }
+
+    public function getRank(): ?string
+    {
+        return $this->rank;
+    }
+
+    public function setRank(string $rank): void
+    {
+        $this->rank = $rank;
     }
 }
